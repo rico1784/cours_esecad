@@ -66,11 +66,8 @@ section{
     background-color: #fff;
     border-radius: 10px;
 }
-section p {
-    font-size: 20px;
-}
 
-.formation h2, h3, img, p {
+.formation h2, h3{
     padding-left: 50px;
 
 }
@@ -84,9 +81,6 @@ section p {
 
     margin: 30px auto 40px auto;
     padding: 20px ;
-
-
-
 }
 
 
@@ -125,3 +119,11 @@ section > div{
     margin-top: -100px;
 }
 
+.interets img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fd7e14;
+    box-shadow: 0 0 60px #504e4e;
+    border-radius: 50%;
+
+}
