@@ -34,15 +34,18 @@ h3 {
 }
 
 li {
-    margin-left: 50px;
-    list-style-type: none;
-    color: #CCCCCC;
     border-bottom-style: dashed;
     border-width: 1px;
     margin: 0;
-    padding: 2px 0px 2px 0px;
+    padding: 2px 0 2px 0;
+    list-style-type: none;
 
 }
+
+li {
+    color: #CCCCCC;
+}
+
 
 p {
     color: #000000;
@@ -53,7 +56,7 @@ p {
 blockquote {
     background-color: #ededed;
     border-color: #aa3322;
-    margin: 10px 0px;
+    margin: 10px 0;
     width: 450px;
     padding: 10px;
     border-style: dashed;
@@ -89,7 +92,8 @@ footer {
 /* logo */
 .logo {
     margin-left: 50px;
-
+    width: 200px;
+    height: 84px
 }
 
 /*menu de navigation*/
@@ -142,17 +146,16 @@ a.lien_body:hover {
     font-size: 16px;
     font-style: italic;
     color: black;
-    font-size: 16px;
 
 
 }
 
 .div_citation {
-    margin: 0px 0px 0px 40px;
+    margin: 0 0 0 40px;
 }
 
 .paragraphe {
-    margin: 50px 0px 10px 0px;
+    margin: 50px 0 10px 0;
     width: 900px;
 
 }
@@ -162,7 +165,7 @@ table.TableHoraire {
     text-align: center;
     border-collapse: collapse;
     width: 70%;
-    margin: 10px 0px 30px 0px;
+    margin: 10px 0 30px 0;
 
 }
 
@@ -186,38 +189,48 @@ table.TableHoraire thead th {
 }
 
 
-/*images infos pratiques*/
 
-.plan {
-    width: 55%;
-    margin-bottom: 20px;
+/****images*****/
+
+/*Images menu*/
+
+.imageMenu {
+    width: 960px;
+    height: 150px;
+}
+/*Images présentations*/
+
+.imageLibrairie {
+    margin: 0 0 10px 0;
+    width: 250px;
+    height: 150px
+
 }
 
-.planDiv {
-    margin: 0px 0px 70px 0px;
-}
-
-
-/*images présentation*/
-
-.imagePresentation {
-    margin: 0px 0px 10px 0px;
-
+.imageNoel {
+    margin: 0 0 10px 0;
+    width: 249px;
+    height: 312px;
 }
 
 /*images évènements*/
 
 .imageEvenement {
-    margin: 0px 20px 0px 0px;
-}
-
-
-.borderImage {
+    margin: 0 20px 0 0;
+    height: 150px;
     border: 1px solid #e3dede;
 }
 
-.imageHomere {
-    height: 150px;
+/*images infos pratiques*/
+
+.plan {
+    margin-bottom: 20px;
+    width: 600px;
+    height: 320px
+}
+
+.planDiv {
+    margin: 0 0 70px 0;
 }
 
 /**** fin class personnalisé ****/

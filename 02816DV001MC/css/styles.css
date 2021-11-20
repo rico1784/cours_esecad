@@ -1,13 +1,13 @@
 /*STYLES GENERAUX*/
 *{
     font-family: Roboto, sans-serif;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     text-align: justify;
     box-sizing: border-box;
 }
 body{
-    background: #ededed;
+    background: #d2cfcf;
 }
 p{
     font-size: 1em;
@@ -22,9 +22,9 @@ a{
 header, footer{
     width: 100%;
     background-repeat: no-repeat;
-    padding: 20px 0px;
+    padding: 40px 0;
     background: url("../img/banner-gfcd040374_1280.jpg") #4f4f4f;
-    box-shadow: 0px 0px 15px #333;
+    box-shadow: 0 0 30px #333;
     background-size: cover;
     background-position: center;
 }
@@ -40,43 +40,88 @@ header h1, header h2{
     text-shadow: 1px 1px 2px #000;
 }
 
-h2 {
-    color :  #004d6d;
+hr
+{
+    /* centre verticalement les enfants entre eux */
+    align-items: center;
+
+    /* active flexbox */
+    display: flex;
+
+    /* garde le texte centré s’il passe sur plusieurs lignes ou si flexbox n’est pas supporté */
+    text-align: center;
+
 }
 
+
+
+/*SECTIONS*/
+section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px #bbb;
+    background-color: #fff;
+    border-radius: 10px;
+}
+section p {
+    font-size: 20px;
+}
+
+.formation h2, h3, img, p {
+    padding-left: 50px;
+
+}
+.formationImage {
+    width: 150px;
+    height: 70px;
+    margin-left: 20px;
+}
+
+.formationDiv{
+
+    margin: 30px auto 40px auto;
+    padding: 20px ;
+
+
+
+}
+
+
+
+.formationDiv2{
+
+    border-style: solid;
+    margin: 0 auto 0 auto;
+    border-color: #d0c8c6;
+    border-radius: 10px;
+    font-size: 25px;
+    line-height: 27px;
+    text-align:center;
+
+}
+
+
+
+
+section > div{
+    width: 90%;
+}
 
 /* Présentation*/
 
 
 .photo{
-    text-align: center;
+    text-align: right;
 }
 .photo img{
     width: 150px;
     height: 150px;
     border: 3px solid #fff;
-    box-shadow: 0px 0px 10px #777;
+    box-shadow: 0 0 10px #777;
     border-radius: 50%;
     margin-top: -100px;
 }
 
-.divPresentation {
-    float: none;
-    margin: 0px auto 0px auto;
-    color: #fff;
-    background-color: #fbc931;
-    box-shadow: 20px 0px 10px #ccc;
-    border-radius: 10px;
-
-}
-.exp{
-    display: flex;
-    flex-flow: row wrap;
-    box-shadow: 20px 0px 10px #ccc;
-    border: 1px solid #bbb;
-    padding-bottom: 0px;
-    margin-bottom: 80px;
-    margin: 20px auto 20px auto;
-    width: 90%;
-    border-radius: 10px;
-}
