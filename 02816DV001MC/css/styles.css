@@ -1,38 +1,37 @@
-/*STYLES GENERAUX*/
-*{
-    font-family: Roboto, sans-serif;
+/*STYLE GENERAL*/
+* {
     padding: 0;
     margin: 0;
     text-align: justify;
     box-sizing: border-box;
 }
-body{
-    background: #d2cfcf;
+
+body {
+    background: #090808;
+    font-family: Roboto, sans-serif;
+
 }
-p{
+
+p {
     font-size: 1em;
     line-height: 1.5em;
 }
-a{
-    text-decoration: none;
-    color: #000;
-}
 
 /*HEADER & FOOTER*/
-header, footer{
+header, footer {
     width: 100%;
-    background-repeat: no-repeat;
     padding: 40px 0;
-    background: url("../img/banner-gfcd040374_1280.jpg") #4f4f4f;
+    background: url("../img/banner-gfcd040374_1280.jpg") #4f4f4f no-repeat center;
     box-shadow: 0 0 30px #333;
     background-size: cover;
-    background-position: center;
 }
-header{
+
+header {
     border-bottom: 2px solid #fff;
     height: 160px;
 }
-header h1, header h2{
+
+header h1, header h2 {
     color: white;
     font-size: 1.5em;
     width: 90%;
@@ -40,8 +39,9 @@ header h1, header h2{
     text-shadow: 1px 1px 2px #000;
 }
 
-hr
-{
+
+/*Lignes séparations*/
+hr {
     /* centre verticalement les enfants entre eux */
     align-items: center;
 
@@ -53,24 +53,21 @@ hr
 
 }
 
-
-
 /*SECTIONS*/
 section{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
     width: 90%;
     margin: 20px auto;
     box-shadow: 0 0 10px #bbb;
-    background-color: #fff;
     border-radius: 10px;
 }
 
-.formation h2, h3{
+.formation h2, h3, p {
     padding-left: 50px;
 
 }
+
 .formationImage {
     width: 150px;
     height: 70px;
@@ -83,35 +80,37 @@ section{
     padding: 20px ;
 }
 
-
-
-.formationDiv2{
+.formationDiv2 {
 
     border-style: solid;
     margin: 0 auto 0 auto;
     border-color: #d0c8c6;
     border-radius: 10px;
-    font-size: 25px;
     line-height: 27px;
-    text-align:center;
+    text-align: center;
+    font-size: 1em;
+
+}
+
+.boutonCv {
+    margin-bottom: 30px;
 
 }
 
 
-
-
-section > div{
+section > div {
     width: 90%;
 }
 
 /* Présentation*/
 
 
-.photo{
+.photo {
     text-align: right;
 }
-.photo img{
-    width: 150px;
+
+.photo img {
+    width: 130px;
     height: 150px;
     border: 3px solid #fff;
     box-shadow: 0 0 10px #777;
@@ -119,7 +118,14 @@ section > div{
     margin-top: -100px;
 }
 
-.interets img{
+.langue {
+    width: 30px;
+    height: 30px;
+    margin-left: 95%;
+}
+
+
+.interets img {
     width: 150px;
     height: 150px;
     border: 3px solid #fd7e14;
@@ -132,3 +138,4 @@ section > div{
 margin: 0 auto 0 auto;
 
 }
+
