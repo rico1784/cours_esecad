@@ -2,12 +2,176 @@
 * {
     padding: 0;
     margin: 0;
-    text-align: justify;
-    box-sizing: border-box;
 }
 
-body {
-    background: #090808;
-    font-family: Roboto, sans-serif;
+/*header, footer {*/
+/*    height: 20px;*/
+/*    background-color: #ffc107;*/
+/*}*/
+
+
+
+/*Mise en page container*/
+/*.boite {*/
+/*    display: grid;*/
+/*    grid-template-columns: 1.3fr 0.7fr;*/
+/*    grid-template-rows: 0.3fr 1.7fr;*/
+/*    grid-auto-columns: 1fr;*/
+/*    gap: 0px 0px;*/
+/*    grid-auto-flow: row dense;*/
+/*    align-items: stretch;*/
+/*    grid-template-areas:*/
+/*    "nav image"*/
+/*    "texte image";*/
+/*}*/
+
+/*.image { grid-area: image; }*/
+
+/*.nav { grid-area: nav;*/
+/*}*/
+
+/*.texte { grid-area: texte;}*/
+/*.logo { grid-area: 1 / 2 / 2 / 3; }*/
+
+/*html, body , .boite {*/
+/*    height: 100%;*/
+/*    font-family: Roboto, sans-serif;*/
+/*}*/
+
+/*!* For presentation only, no need to copy the code below *!*/
+
+/*.boite * {*/
+/*    border: 1px solid red;*/
+/*    position: relative;*/
+
+/*}*/
+.boite {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    grid-template-rows: 0.2fr 1.8fr;
+    grid-auto-columns: 1fr;
+    gap: 0 0;
+    grid-auto-flow: row dense;
+    align-items: stretch;
+}
+
+.image {
+
+     grid-area: image;
+    grid-area: 1 / 2 / 3 / 3;
+}
+
+.texte { grid-area: 2 / 1 / 3 / 2; }
+
+.nav {
+
+    justify-self: stretch;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.logo { grid-area: 1 / 2 / 2 / 3; }
+
+
+html, body , .boite {
+    height: 100%;
+    margin: 0;
+}
+
+/* For presentation only, no need to copy the code below */
+
+/*.boite * {*/
+/*    border: 1px solid red;*/
+/*    position: relative;*/
+/*}*/
+
+/*Fin - Mise en page container*/
+
+
+.borderDemo {
+    border-radius: 0 0 0 500px;
+    background: url("../img/electrician.jpg") no-repeat center;
+    background-size: cover;
+    margin-right: -15px;
 
 }
+
+/*Menu de navigation*/
+.bouton {
+    box-shadow:inset 0px 1px 0px 0px #fff6af;
+    background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color:#ffec64;
+    border-radius:6px;
+    border:1px solid #ffaa22;
+    display:inline-block;
+    cursor:pointer;
+    color:#1d1905;
+    font-weight:bold;
+    padding:6px 24px;
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    margin: auto;
+}
+.bouton:hover {
+    background:linear-gradient(to bottom, #1d1905 5%, #ffec64 100%);
+    background-color:#ffab23;
+    color: #e3dede;
+}
+.bouton:active {
+    position:relative;
+    top:1px;
+}
+
+/*Fin - Menu de navigation*/
+
+
+/*Mise en page texte*/
+
+.posTexte {
+    padding-left: 50px;
+}
+
+.colorBoite{
+    background: url("../img/fond.png") ;
+    background-size: cover;
+
+}
+
+.logoImage {
+    width: 200px;
+    height: auto;
+    position: absolute;
+
+
+
+}
+
+
+
+/*ancien code*/
+
+
+/*.boite *:after {*/
+/*    content:attr(class);*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    display: grid;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+
+/*.boite *:after {*/
+/*    content:attr(class);*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    display: grid;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
