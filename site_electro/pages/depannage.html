@@ -29,10 +29,10 @@
 <!--Fin header-->
 <div class="boite ">
     <div class="nav">
-        <button  class="bouton" onclick="window.location.href = '../pages/accueil.html';">Acceuil</button >
-        <button  class="bouton" onclick="window.location.href = '../pages/quiSommesNous.html';">Qui sommes-nous</button>
-        <button  class="bouton" onclick="window.location.href = '../pages/activites.html';">Nos activités</button>
-        <button  class="bouton" onclick="window.location.href = '../pages/depannage.html';">Dépannage</button>
+        <button class="bouton" onclick="window.location.href = '../pages/accueil.html';">Acceuil</button>
+        <button class="bouton" onclick="window.location.href = '../pages/quiSommesNous.html';">Qui sommes-nous</button>
+        <button class="bouton" onclick="window.location.href = '../pages/activites.html';">Nos activités</button>
+        <button class="bouton" onclick="window.location.href = '../pages/depannage.html';">Dépannage</button>
     </div>
 
     <!--Formulaire de contact-->
@@ -42,47 +42,47 @@
                 <h1 class="text-center">Rendez-vous</h1>
                 <h2 class="text-center">Nous sommes à votre disposition</h2>
                 <h3 class="text-center">Dépannages, installations</h3>
-                <form name="frmContact" id="" frmContact"" method="post"
+                <form name="frmContact" id="" frmContact="" method="post"
                 action="" enctype="multipart/form-data"
                 onsubmit="return validateContactForm()">
                 <div class="row text-center">
                     <div class="inline-block right-margin ">
                         <div class="label">
-                            Prénom <span id="firstName-info"
-                                             class="info"></span>
+                            Prénom <span class="info"
+                                         id="firstName-info"></span>
 
-                        <input type="text" class="input-field"
-                               name="contact-first-name"
-                               id="contact-first-name" />
+                            <input class="input-field" id="contact-first-name"
+                                   name="contact-first-name"
+                                   type="text"/>
                         </div>
                     </div>
                     <div class="inline-block responsive ">
                         <div class="label">
-                            Nom <span id="lastName-info" class="info"></span>
+                            Nom <span class="info" id="lastName-info"></span>
                         </div>
-                        <input type="text" class="input-field"
-                               name="contact-last-name" id="contact-last-name" />
+                        <input class="input-field" id="contact-last-name"
+                               name="contact-last-name" type="text"/>
                     </div>
                 </div>
                 <div class="row text-center">
                     <div class="inline-block right-margin">
                         <div class="label">
-                            Email <span id="email-info" class="info"></span>
+                            Email <span class="info" id="email-info"></span>
                         </div>
-                        <input type="text" class="input-field"
-                               name="contact-email" id="contact-email" />
+                        <input class="input-field" id="contact-email"
+                               name="contact-email" type="text"/>
                     </div>
                     <div class="inline-block responsive">
                         <div class="label">
-                            Téléphone <span id="phone-info" class="info"></span>
+                            Téléphone <span class="info" id="phone-info"></span>
                         </div>
-                        <input type="text" class="input-field"
-                               name="contact-phone" id="contact-phone" />
+                        <input class="input-field" id="contact-phone"
+                               name="contact-phone" type="text"/>
                     </div>
 
                     <div class="inline-block responsive">
                         <div class="label">
-                            Type de la demande <span id="type" class="info"></span>
+                            Type de la demande <span class="info" id="type"></span>
                         </div>
                         <select class="input-field ">
                             <option></option>
@@ -97,16 +97,16 @@
 
                     <div class="inline-block responsive">
                         <div class="label">
-                            Message <span id="message-info" class="info"></span>
+                            Message <span class="info" id="message-info"></span>
                         </div>
-                        <textarea name="contact-message"
-                                  id="contact-message" class="input-field"
-                                  cols="60" rows="6"></textarea>
+                        <textarea class="input-field"
+                                  cols="60" id="contact-message"
+                                  name="contact-message" rows="6"></textarea>
                     </div>
                 </div>
                 <div class="row text-center">
-                    <input type="submit" name="send" class="btn-submit"
-                           value="Send" />
+                    <input class="btn-submit" name="send" type="submit"
+                           value="Send"/>
                 </div>
                 <div class="row">
                     <div id="statusMessage">
@@ -127,13 +127,13 @@
     <!--Fin du formulaire de contact-->
 
 
-<!--    Image à droite-->
+    <!--    Image à droite-->
     <div class="image borderDemo"></div>
 
     <div class="logo">
-        <img class="logoImage" alt="logoImage" src="../img/logo.png">
+        <img alt="logoImage" class="logoImage" src="../img/logo.png">
     </div>
-<!--Fin de l'image à droite-->
+    <!--Fin de l'image à droite-->
 
 
 </div>
