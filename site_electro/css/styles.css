@@ -1,4 +1,4 @@
-/*STYLE GENERAL*/
+/***STYLE GENERAL***/
 * {
     padding: 0;
     margin: 0;
@@ -10,14 +10,31 @@ body {
 
 }
 
+header {
+    background: #000000;
+    color: #ffec64;
+
+}
+
+/*fotter*/
 footer{
     margin-top: 40px;
+    background: #000000;
+    color: #ffec64;
 
 }
 
-.texte img {
-    margin: 0px 0 80px 0;
+footer a:visited {
+    color: #06e006;
 }
+footer a:link {
+    color: #ffec64;
+}
+
+/*** FIN STYLE GENERAL***/
+
+
+
 
 /*Mise en page container*/
 .boite {
@@ -33,7 +50,6 @@ footer{
 
 .image {
 
-     grid-area: image;
     grid-area: 1 / 2 / 3 / 3;
 }
 
@@ -41,6 +57,11 @@ footer{
     grid-area: 2 / 1 / 3 / 2;
     margin-top: -30px;
 }
+
+.texte img {
+    margin: 0 0 80px 0;
+}
+
 
 .nav {
 
@@ -64,7 +85,7 @@ footer{
 
 /*Menu de navigation*/
 .bouton {
-    box-shadow:inset 0px 1px 0px 0px #fff6af;
+    box-shadow:inset 0 1px 0 0 #fff6af;
     background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
     background-color:#ffec64;
     border-radius:6px;
@@ -137,9 +158,6 @@ footer{
 }
 
 /*Formulaire de contact*/
-body {
-    font-family: Arial;
-}
 
 .form-container {
     border: #91949d 1px solid;
@@ -150,7 +168,7 @@ body {
     color: #1e2a28;
     width: 740px;
     margin: 0 auto;
-    padding: 12px 12px 0px 36px;
+    padding: 12px 12px 0 36px;
 }
 
 .label {
@@ -163,7 +181,7 @@ body {
     padding: 10px;
     border: #91949d 1px solid;
     box-sizing: border-box;
-    margin: 5px 10px 0px 0px;
+    margin: 5px 10px 0 0;
 }
 
 .btn-submit {
@@ -229,13 +247,16 @@ body {
 }
 
 .subject-option {
-    margin-bottom: 8px;
-    margin: 4px 10px 6px 0px;
+
+    margin: 4px 10px 6px 0;
 }
 
 .text-center {
     text-align: center;
 }
+
+
+/*Données responsives*/
 
 @media only screen and (max-width: 760px) {
     .form-container {
@@ -294,76 +315,3 @@ body {
         margin-top: -10px;
     }
 }
-/*Fin - Menu de navigation*/
-
-
-
-/*ancien code*/
-
-
-/*.boite *:after {*/
-/*    content:attr(class);*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    display: grid;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*}*/
-
-
-/*.boite *:after {*/
-/*    content:attr(class);*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    display: grid;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*}*/
-
-/*header, footer {*/
-/*    height: 20px;*/
-/*    background-color: #ffc107;*/
-/*}*/
-
-
-
-/*Mise en page container*/
-/*.boite {*/
-/*    display: grid;*/
-/*    grid-template-columns: 1.3fr 0.7fr;*/
-/*    grid-template-rows: 0.3fr 1.7fr;*/
-/*    grid-auto-columns: 1fr;*/
-/*    gap: 0px 0px;*/
-/*    grid-auto-flow: row dense;*/
-/*    align-items: stretch;*/
-/*    grid-template-areas:*/
-/*    "nav image"*/
-/*    "texte image";*/
-/*}*/
-
-/*.image { grid-area: image; }*/
-
-/*.nav { grid-area: nav;*/
-/*}*/
-
-/*.texte { grid-area: texte;}*/
-/*.logo { grid-area: 1 / 2 / 2 / 3; }*/
-
-/*html, body , .boite {*/
-/*    height: 100%;*/
-/*    font-family: Roboto, sans-serif;*/
-/*}*/
-
-/*!* For presentation only, no need to copy the code below *!*/
-
-/*.boite * {*/
-/*    border: 1px solid red;*/
-/*    position: relative;*/
-
-/*}*/

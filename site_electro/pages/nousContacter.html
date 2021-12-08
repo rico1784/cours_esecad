@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="x-ua-compatible">
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+<!-- CSS local -->
+<link href="../css/styles.css" media="screen" rel="stylesheet">
+<link href="../css/bootstrap.css" media="screen" rel="stylesheet">
+<link href="../css/bootstrap-grid.css" media="screen" rel="stylesheet">
+
+<!-- Bootstrap CSS -->
+<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" rel="stylesheet">
+
+
+    <title>VOLTA - Nous contacter</title>
+</head>
+<body class="colorBoite">
+
+<!-- Header -->
+<header>
+    <div class="row justify-content-end icons">
+        <div class="col-md-5">
+            <i class=" fab fa-facebook-square"></i>
+        </div>
+        <div class="col-md-3 align-content-center ">
+            <i class=" fas fa-map-marked-alt"></i>
+            <span>Rue des fleurs 5, Fribourg, Suisse</span>
+        </div>
+        <div class="col-md-3 align-content-center ">
+
+            <i class=" fas fa-mobile-alt"></i>
+            <a href="tel:+33711223344">07 11 22 33 44</a>
+        </div>
+    </div>
+</header>
+<!--Fin header-->
+
+<!--Contenu princial-->
+<div class="boite ">
+    <div class="nav">
+        <button  class="bouton" onclick="window.location.href = '../pages/accueil.html';">Acceuil</button >
+        <button  class="bouton" onclick="window.location.href = '../pages/quiSommesNous.html';">Qui sommes-nous</button>
+        <button  class="bouton" onclick="window.location.href = '../pages/activites.html';">Nos activités</button>
+        <button  class="bouton" onclick="window.location.href = '../pages/nousContacter.html';">Nous contacter</button>
+    </div>
+
+    <div class="boite posTexte">
+        <div class="texte">
+            <form action="/action_page.php" class="was-validated">
+                <div class="form-group">
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" class="form-control" id="prenom" placeholder="Entrer votre prénom" name="prenom" required>
+                    <div class="valid-feedback">Validé</div>
+                    <div class="invalid-feedback">Merci de remplir ce champ.</div>
+                </div>
+                <div class="form-group">
+                    <label for="nom">Nom:</label>
+                    <input type="password" class="form-control" id="nom" placeholder="Entrer votre nom" name="nom" required>
+                    <div class="valid-feedback">Validé</div>
+                    <div class="invalid-feedback">Merci de remplir ce champ.</div>
+                </div>
+                <div class="form-group">
+                    <label for="demande">Type de demande:</label>
+                    <select type="text" class="form-control" id="demande" name="demande" required>
+                        <option></option>
+                        <option>Demander de devis</option>
+                        <option>Demander de rendez-vous</option>
+                        <option>Demander un dépannage</option>
+                        <option>Autre</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter votre email" name="email" required>
+                    <div class="valid-feedback">Validé</div>
+                    <div class="invalid-feedback">Merci de remplir ce champ.</div>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Commentaires:</label>
+                    <textarea class="form-control" rows="6" id="comment" placeholder="Enter votre commentaire" name="commentaire" required></textarea>
+                    <div class="valid-feedback">Validé</div>
+                    <div class="invalid-feedback">Merci de remplir ce champ.</div>
+
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember" required>  J'ai lu et j'accepte la <a href="confidentialite.html">politique de confidentialité</a>
+                        <div class="valid-feedback">Validé</div>
+                        <div class="invalid-feedback">Check this checkbox to continue.</div>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="image borderDemo">
+    </div>
+
+    <div class="logo">
+        <img class="logoImage" alt="logoImage" src="../img/logo.png">
+
+    </div>
+
+</div>
+<!--Fin contenu princial-->
+<!--début Footer-->
+<footer class="text-center">
+    <span><a href="#">Mentions légales</a> - Une création <a href="#">RICO</a> 2021 - <a href="confidentialite.html">Politique de confidentialité</a></span>
+</footer>
+
+<!-- Fin Footer -->
+</body>
+</html>
