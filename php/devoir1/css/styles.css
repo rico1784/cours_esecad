@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.boite {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 8fr 0.5fr;
+    grid-template-areas:
+    "nav nav nav logo"
+    "content content feature feature"
+    "footer footer footer footer"
+;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: red;
+}
+
+.navigation{
+   grid-area: nav;
+    background-color: blue;
+
+}
+
+.content {
+    grid-area: content;
+    background-color: aqua;
+}
+
+.feature{
+    grid-area: feature;
+    background-color: yellow;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: beige;
+
+}
